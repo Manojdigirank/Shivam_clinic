@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shivam Clinic - Empathetic Precision in Healthcare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Manrope:wght@600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-container": "#bfd1dc",
+                        "on-primary-container": "#bcceff",
+                        "inverse-surface": "#213145",
+                        "surface": "#f8f9ff",
+                        "surface-container": "#e5eeff",
+                        "on-primary-fixed": "#001945",
+                        "inverse-on-surface": "#eaf1ff",
+                        "primary": "#003c90",
+                        "outline": "#737784",
+                        "primary-fixed-dim": "#b0c6ff",
+                        "primary-fixed": "#d9e2ff",
+                        "tertiary-container": "#495a64",
+                        "on-secondary": "#ffffff",
+                        "surface-dim": "#cbdbf5",
+                        "outline-variant": "#c3c6d5",
+                        "on-secondary-fixed-variant": "#871746",
+                        "on-secondary-container": "#750338",
+                        "secondary-container": "#fe76a2",
+                        "on-tertiary-fixed": "#0c1e26",
+                        "primary-container": "#0f52ba",
+                        "on-secondary-fixed": "#3f001b",
+                        "surface-variant": "#d3e4fe",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#32434c",
+                        "on-surface": "#0b1c30",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface-tint": "#1d59c1",
+                        "tertiary-fixed": "#d3e5f1",
+                        "secondary-fixed-dim": "#ffb1c5",
+                        "on-primary": "#ffffff",
+                        "background": "#f8f9ff",
+                        "surface-container-low": "#eff4ff",
+                        "inverse-primary": "#b0c6ff",
+                        "on-surface-variant": "#434653",
+                        "secondary": "#a7325d",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-fixed-variant": "#384953",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-fixed-variant": "#00419c",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#b7c9d5",
+                        "on-background": "#0b1c30",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffd9e1",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "120px",
+                        "card-padding": "32px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "h3": ["Manrope"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "h2": ["Manrope"],
+                        "h1": ["Manrope"],
+                        "button": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "button": ["16px", {"lineHeight": "1", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gradient-btn {
+            background: linear-gradient(135deg, #003c90 0%, #0f52ba 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0px_4px_20px_rgba(15,82,186,0.08)]">
+<div class="flex justify-between items-center w-full px-gutter py-4 max-w-container-max mx-auto">
+<h1 class="text-h3 font-h3 font-bold text-primary">Shivam Clinic</h1>
+<div class="flex items-center gap-4">
+<button class="gradient-btn text-white px-6 py-3 rounded-xl font-button text-button shadow-lg active:scale-95 transition-transform">
+                    Call Now
+                </button>
+<button class="text-primary p-2">
+<span class="material-symbols-outlined text-[32px]" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-[80px]">
+<!-- Hero Section (Mobile Optimized) -->
+<section class="px-gutter pt-8 pb-section-gap">
+<div class="flex flex-col gap-8">
+<div class="relative rounded-3xl overflow-hidden aspect-square shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A professional male doctor in a crisp white lab coat smiling warmly against a soft-focus clinical background. The lighting is bright and airy, emphasizing a light-mode aesthetic with clean blue and white tones. The overall mood is approachable, empathetic, and highly professional, reflecting premium boutique healthcare quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXh_R5jr-Y_dnGWjfbYNo9QTl9LBlVjqv9DR5ycG-sGnUkLTr8RN4VqTjPerFoLPXGECZCMNmK1vUuaGGvyD5tdD1rNrLkbM_m4_83hw8zn3qTWnv_GxVUfVBmJ_IE4bOIBfjmloPTPmF54o7g1_fbaHXR4ifkElluRG9XFdKBmMZqXwtpZ5PJ9gUWu2HrknWh3kHZRXkDWaJJ4akKXLjFc5SnsEL7llnpGZgpH_BSush6pWc0j4e7Jt3hl1hSNN4mj95KWCQY4o4w"/>
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl flex items-center gap-3 border border-primary/10">
+<div class="bg-primary/10 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary" data-icon="verified">verified</span>
+</div>
+<div>
+<p class="font-label-caps text-primary text-[10px] uppercase tracking-wider">Expert Care</p>
+<p class="font-bold text-on-surface">15+ Years Excellence</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h2 class="font-h1 text-h2 text-primary leading-tight">Advanced Healthcare for your entire Family.</h2>
+<p class="font-body-lg text-on-surface-variant">Experience world-class medical attention with a personal touch. Our specialist-led clinic provides comprehensive care tailored to every age group.</p>
+<div class="flex flex-col gap-4">
+<button class="gradient-btn text-white h-[56px] rounded-xl font-button text-button shadow-xl flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+                            Book Appointment
+                        </button>
+<button class="bg-surface-container text-primary h-[56px] rounded-xl font-button text-button border border-primary/10 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+                            View Treatments
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Treatments Section (Two-Column Grid) -->
+<section class="bg-surface-container-low py-section-gap px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="mb-12">
+<span class="font-label-caps text-secondary uppercase tracking-widest bg-secondary/10 px-3 py-1 rounded-full">Specializations</span>
+<h2 class="font-h2 text-h2 mt-4 text-on-surface">Treatments &amp; Services</h2>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<!-- Modern Medical Card 1 -->
+<div class="bg-surface-container-lowest p-card-padding rounded-[32px] shadow-[0px_4px_20px_rgba(15,82,186,0.06)] border border-tertiary-fixed/30 flex flex-col items-start">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary text-[32px]" data-icon="pediatrics">pediatrics</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3 text-on-surface">Pediatric Care</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Comprehensive health services for infants, children, and adolescents focusing on preventative care.</p>
+<a class="text-primary font-button flex items-center gap-2" href="#">Learn More <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+<!-- Modern Medical Card 2 -->
+<div class="bg-surface-container-lowest p-card-padding rounded-[32px] shadow-[0px_4px_20px_rgba(15,82,186,0.06)] border border-tertiary-fixed/30 flex flex-col items-start">
+<div class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary text-[32px]" data-icon="monitor_heart">monitor_heart</span>
+</div>
+<h3 class="font-h3 text-h3 mb-3 text-on-surface">General Medicine</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Expert diagnosis and treatment of acute and chronic conditions for adults of all ages.</p>
+<a class="text-primary font-button flex items-center gap-2" href="#">Learn More <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (Vertical Stack) -->
+<section class="py-section-gap px-gutter bg-white overflow-hidden">
+<div class="relative">
+<div class="mb-12 text-center">
+<h2 class="font-h2 text-h2 text-primary">Why Choose Shivam</h2>
+<p class="mt-4 text-on-surface-variant font-body-md">Redefining the patient experience with modern care.</p>
+</div>
+<div class="flex flex-col gap-4">
+<div class="flex gap-4 p-6 bg-surface-container rounded-2xl">
+<div class="shrink-0 w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Safe Environment</h4>
+<p class="text-sm text-on-surface-variant mt-1">Stringent hygiene protocols ensuring patient safety.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-surface-container-low rounded-2xl">
+<div class="shrink-0 w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="schedule">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Minimal Wait Time</h4>
+<p class="text-sm text-on-surface-variant mt-1">Efficient scheduling to respect your valuable time.</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-surface-container-high rounded-2xl">
+<div class="shrink-0 w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Patient Focused</h4>
+<p class="text-sm text-on-surface-variant mt-1">Empathetic care plans designed around your needs.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Timing Section -->
+<section class="bg-primary-container py-section-gap px-gutter text-white">
+<div class="max-w-container-max mx-auto">
+<div class="mb-10">
+<h2 class="font-h2 text-h2 mb-2 text-primary-fixed">Clinical Hours</h2>
+<p class="text-on-primary-container">Planning your visit for optimal convenience.</p>
+</div>
+<div class="space-y-4">
+<div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl flex justify-between items-center border border-white/10">
+<div>
+<p class="font-bold text-lg">Mon - Sat</p>
+<p class="text-primary-fixed-dim text-sm">Morning Session</p>
+</div>
+<div class="text-right">
+<p class="font-bold">10:00 AM - 01:30 PM</p>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl flex justify-between items-center border border-white/10">
+<div>
+<p class="font-bold text-lg">Mon - Sat</p>
+<p class="text-primary-fixed-dim text-sm">Evening Session</p>
+</div>
+<div class="text-right">
+<p class="font-bold">05:30 PM - 09:00 PM</p>
+</div>
+</div>
+<div class="bg-secondary-container p-6 rounded-2xl flex flex-col gap-4 text-on-secondary-container">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined" data-icon="warning">warning</span>
+<p class="font-bold">Emergency Cases</p>
+</div>
+<p class="text-sm">For critical emergencies outside regular hours, please call our 24/7 hotline directly.</p>
+<button class="bg-white text-secondary h-12 rounded-xl font-bold flex items-center justify-center gap-2 shadow-md">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                            Call Emergency
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Patient Stories (Vertical Stack) -->
+<section class="py-section-gap px-gutter">
+<div class="text-center mb-12">
+<h2 class="font-h2 text-h2 text-on-surface">Patient Stories</h2>
+<div class="flex justify-center mt-2 gap-1">
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-secondary" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-surface-container-low p-8 rounded-[32px] border border-primary/5">
+<p class="italic text-on-surface-variant font-body-lg mb-6">"The pediatric care at Shivam Clinic is exceptional. Dr. Shivam is incredibly patient with kids and explains everything clearly to parents. Highly recommended!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-primary/20">
+<img class="w-full h-full object-cover" data-alt="A close-up portrait of a smiling young mother with a warm and relieved expression, representing a satisfied patient. The photo is set in a bright, modern indoor environment with soft, natural lighting that complements the light-mode UI design. High-quality commercial photography style with clean composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDppt_8RJvRncTX-9sCDDYSAHBoWDQKVQvyw_gudqBG7_zaqVSgNoPJpDuHlmGVmA0pDeHJwXtjLkZ-aVVvETf0t0sALjA1W5pMBMMNsLUkMLPEU1gS7DZ7QVqwRySe2liqd47PkZPB2Dwlr4HR1vs-AQQt0M5B3hlLXB9xHfhxRA_yn0YDyu4ZMY13X6HK5VTLGPsEEEA7MrKpiJac4xeFR9CT72Pe2CvFy7cBjQkKWCB2Z8hiPnvLAWomUTnMjhRthKAcTQr8R7E"/>
+</div>
+<div>
+<p class="font-bold text-on-surface">Priya Sharma</p>
+<p class="text-xs text-on-surface-variant">Mother of two</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form & Map -->
+<section class="pb-section-gap px-gutter">
+<div class="bg-surface-container-highest rounded-[40px] p-8">
+<h2 class="font-h2 text-h2 text-primary mb-8">Get in Touch</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-bold mb-2 ml-2">Full Name</label>
+<input class="w-full h-14 bg-white border-none rounded-2xl px-6 focus:ring-2 focus:ring-primary shadow-sm" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 ml-2">Phone Number</label>
+<input class="w-full h-14 bg-white border-none rounded-2xl px-6 focus:ring-2 focus:ring-primary shadow-sm" placeholder="+91 98765 43210" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 ml-2">Reason for Visit</label>
+<select class="w-full h-14 bg-white border-none rounded-2xl px-6 focus:ring-2 focus:ring-primary shadow-sm">
+<option>Pediatric Consultation</option>
+<option>General Checkup</option>
+<option>Vaccination</option>
+<option>Other</option>
+</select>
+</div>
+<button class="w-full gradient-btn text-white h-16 rounded-2xl font-button text-button shadow-lg mt-4">Send Message</button>
+</form>
+<div class="mt-12 rounded-3xl overflow-hidden h-64 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A stylized digital map visualization showing the clinic's location in a clean, modern urban layout. The map uses a sophisticated color palette of whites, light blues, and primary blue accents. A prominent blue pin marks the location, designed to feel integrated with the clinic's professional brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMw-BJA98I-vWHZDQKa9cQsKBB9YMLJ5sS8tSUM5GpBpDE9wKlxIZC_hj-obpOoQIlIsA9qv8KMLIF9Gr6eN_nqo93Iiaz47BAs50U1lLCyB3sWAoimjEb21aiottXqpJy43feq7ycIjMyj23LixFydlJNOGTL7UETaqecB2DZJT9kCiia-qgBe95pdMg3gojEzlOJuujqFkbKI-PUBMcbQv7XK45yK3Xrmo8mHYW0hDkmLK9eZBnMslQR_7KDext9KvmoGzwS_z0K"/>
+</div>
+<div class="mt-6 flex items-start gap-4 p-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<p class="text-on-surface-variant text-sm">Sector 15, Near Central Market, New Delhi, India 110001</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-dim dark:bg-inverse-surface py-section-gap px-gutter">
+<div class="flex flex-col items-start w-full max-w-container-max mx-auto gap-base">
+<h1 class="text-h3 font-h3 font-bold text-on-surface dark:text-inverse-on-surface mb-4">Shivam Clinic</h1>
+<div class="flex flex-col gap-4 mb-8">
+<a class="font-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary underline transition-colors" href="#">About Us</a>
+<a class="font-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary underline transition-colors" href="#">Treatments</a>
+<a class="font-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary underline transition-colors" href="#">Consulting Hours</a>
+<a class="font-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary underline transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary underline transition-colors" href="#">Terms of Service</a>
+</div>
+<p class="font-body-md text-primary dark:text-primary-fixed-dim border-t border-primary/10 pt-8 w-full text-sm">© 2024 Shivam Clinic. Empathetic Precision in Healthcare.</p>
+</div>
+</footer>
+<!-- Sticky Mobile Actions -->
+<div class="fixed bottom-6 left-6 right-6 z-50 flex gap-4">
+<button class="flex-1 bg-green-600 text-white h-14 rounded-2xl shadow-2xl flex items-center justify-center gap-2 font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="chat" style="font-variation-settings: 'FILL' 1;">chat</span>
+            WhatsApp
+        </button>
+<button class="flex-1 gradient-btn text-white h-14 rounded-2xl shadow-2xl flex items-center justify-center gap-2 font-bold active:scale-95 transition-transform">
+<span class="material-symbols-outlined" data-icon="call" style="font-variation-settings: 'FILL' 1;">call</span>
+            Call Now
+        </button>
+</div>
+</body></html>
